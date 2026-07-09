@@ -4,20 +4,20 @@
 
 This is my fifth Python cybersecurity project.
 
-The aim of this project was to get a better understanding of how network packets travel across a network and how they can be captured using Python. I used the Scapy library to capture live IP packets and display information such as the source IP address, destination IP address and the protocol being used.
+I wanted to build this project to understand how network packets travel across a network and how they can be captured using Python. The program uses the Scapy library to capture live IP packets and then displays information such as the source IP address, destination IP address and the protocol being used.
 
-Building this project also helped me become more confident using external Python libraries and working with network traffic.
+While making this project I learnt more about packet sniffing, network traffic and how external Python libraries can be used within a cybersecurity program.
 
 ## Features
 
 - Captures live IP packets
-- Shows the source IP address
-- Shows the destination IP address
+- Displays the source IP address
+- Displays the destination IP address
 - Detects TCP, UDP and ICMP packets
 - Lets the user choose how many packets to capture
 - Counts how many packets were captured
-- Shows how long the capture took
-- Includes basic error handling
+- Measures how long the capture took
+- Handles unexpected errors
 
 ## Technologies Used
 
@@ -27,11 +27,12 @@ Building this project also helped me become more confident using external Python
 
 ## Example Output
 
+```text
 How many IP packets would you like to capture? 5
 
 Packet Number: 1
-Source IP: 112.148.0.64
-Destination IP: 91.136.246.81
+Source IP: 192.168.0.84
+Destination IP: 94.126.239.81
 Protocol: TCP
 
 Capture Summary
@@ -47,24 +48,16 @@ While making this project I learnt:
 - How packet sniffing works
 - How to use the Scapy library
 - The difference between TCP, UDP and ICMP packets
-- How callback functions work in Python
-- How to count and display live packet information
+- How callback functions work
+- How to capture and display live packet information
 - How to improve my error handling
 
 ## Future Improvements
 
-In the future I would like to:
+If I continue working on this project I would like to:
 
-- Display port numbers
-- Save packet information to a text file
+- Display source and destination port numbers
+- Save captured packet information to a text file
 - Show more information about each packet
 - Add protocol statistics
-- Create a simple GUI
-
-## Author
-
-Armaan Akhtar
-
-BSc Computer Science for Cyber Security
-
-University of Bradford
+- Create a simple graphical interface
